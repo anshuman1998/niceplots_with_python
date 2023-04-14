@@ -53,12 +53,13 @@ ax1.legend(loc="upper right",fontsize=43,framealpha=1.0,ncol=2)
 
 
 ax2.plot(x,y,lw=10,c='#228833')
-
 ax2.set(xlabel=r"$Latex style$",ylabel=None)
 #ax2.set_ylim(top=,bottom=)
-plt.subplots_adjust(hspace=.0)
 #ax2.set_yscale("log")
 ax2.minorticks_off()
+
+plt.subplots_adjust(hspace=.0) #To remove spacing between the 3 plots
+
 
 #And the y-axis label:
 fig.text(0.01, 0.38, r"label", va='center', rotation='vertical')
